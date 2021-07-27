@@ -3,7 +3,7 @@ import os
 
 
 #Statics that never change
-basePath = 'TemplateFolder'
+basePath = 'Setup/Applications/NewAppName'
 environmentsPath = 'Environments'
 infrastructureDefinitionsPath = 'Infrastructure Definitions'
 servicesPath = 'Services'
