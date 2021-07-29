@@ -14,9 +14,11 @@ class InputData(object):
         self.envName = envName
         self.repoSlug = repoSlug
 
+#Use this if you want to pass in the args on the cli, make sure that you use the correct operator in the constructor above
 def GetInputDataFromArguments(argv):
     return InputData(argv[1],argv[2],argv[3],argv[4],argv[5],argv[6],argv[7],argv[8],argv[9],argv[10],argv[11])
 
+#Read from the jsonData.json file, and load from the json based on the keys, allows you to use a json webhook
 def GetInputDataFromJson():
         with open('jsonData.json', "r") as file:
              obj = file.read()

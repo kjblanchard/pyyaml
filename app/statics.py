@@ -23,6 +23,10 @@ def setGlobals(environment, slug):
 
 
 #Used by all the models to remove the output in the yaml
+#Normally pyyaml will add metadata to the output yaml, we change that function to this function that does nothing (pass), so it doen't add metadata
+#*args means it can take a varying amount of arguments
+#**kw means it can take any amount of keyword args (maps)
+#The * operator means unpack, and ** unpacks a map.
 def noopToRemoveOutput(self, *args, **kw):
     pass
 

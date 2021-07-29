@@ -9,6 +9,7 @@ from .yamlModels import valuesIndex as valuesIndexImport
 from .yamlModels import apiServiceValues as apiServiceValuesImport
 from .yamlModels import valuesValues as valuesValuesImport
 
+#Constructs all of the yaml, each of these is a different model that creates a yaml file
 def CreateAllFiles(data):
     hostnameImport.CreateHostname(data.hostname, data.infrastructureName, data.projectKey, data.serviceName)
     environmentImport.CreateEnvironmentIndex()
